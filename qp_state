@@ -1,14 +1,7 @@
-IBV_QPS_RESET
-重置状态
-IBV_QPS_INIT
-初始化状态
-IBV_QPS_RTR
-准备接收状态
-IBV_QPS_RTS
-准备发送状态
-IBV_QPS_SQD
-发送队列耗尽状态
-IBV_QPS_SQE
-发送队列错误状态
-IBV_QPS_ERR
-错误状态
+IBV_QPS_RESET - 复位状态
+IBV_QPS_INIT - 初始化状态
+IBV_QPS_RTR - 准备接收状态
+IBV_QPS_RTS - 准备发送状态
+IBV_QPS_SQD - 发送队列耗尽状态
+IBV_QPS_SQE - 发送队列错误状态
+IBV_QPS_ERR - 错误状态
