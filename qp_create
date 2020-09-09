@@ -1,0 +1,15 @@
+首先我们得有提供qp的设备，这个称为dev，
+通过ibv_get_device_list()来获得，
+然后通过设备名称来匹配自己需要的那个设备，
+基于设备建立context，
+基于context建立pd，
+基于pd建立cq，
+基于cq建立qp。
+
+dev = find_a_matched_device(ibv_get_device_list());
+ctx =  ibv_open_device(dev)
+pd =  ibv_alloc_pd(context)
+send_cq = ibv_create_cq(ctx, ...);
+recv_cq = ibv_create_cq(ctx, ...);
+qp = ibv_create_qp(pd, qp_attr(send_cq, recv_cq, ...));
+ibv_modify_qp(qp, attr, attr_mask);
